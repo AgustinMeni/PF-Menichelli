@@ -11,6 +11,26 @@
     <link rel="stylesheet" href="../css/main.css">
 </head>
 
+<body>
+    <div class="contenedorHeader">
+        <header>
+            <div class="logo">
+                <a href="#">Agustin Menichelli</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio">INICIO</a></li>
+                    <li><a href="#sobremi">SOBRE MI</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#curriculum">CURRICULUM</a></li>
+                    <li><a href="#contacto">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-Responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
     <!--Seccion Inicio-->
     <section id="inicio" class="inicio">
         <div class="contenidoBanner">
@@ -24,3 +44,22 @@
             </div>
         </div>
     </section>
+
+    <section id="contacto" class="contacto">
+        <div class="contenido-contacto">
+            <h2>Contacto</h2>
+            <h4>Podes comunicarte conmigo a traves de estos canales</h4>
+                <div class="contacto-redes">
+                    <button type="button" class="WP" onclick="window.location.href='https://api.whatsapp.com/send?phone=TU_NUMERO_DE_TELEFONO'">WhatsApp</button>
+                    <button type="button" class="LK" onclick="window.location.href='URL_DE_TU_PERFIL_LINKEDIN'">Linkedin</button>
+                    <button type="button" class="GM" onclick="window.location.href='mailto:DIRECCION_DE_CORREO'">Mail</button>
+                    </div>
+                </div>
+    </section>
+    
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+    </footer>
+</body>
