@@ -23,7 +23,7 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 10px 15px;
 }
 .contenedorHeader header .logo a{
     font-family: 'Righteous';
@@ -36,14 +36,15 @@ html{
     list-style: none;
 }
 .contenedorHeader header ul li a{
+    font-family:'Righteous';
     text-align: none;
     color: #fff;
     margin: 0 15px;
-    padding: 3px;
+    padding: 10px;
     transition: .5s;
     text-decoration: none;
 }
-.contenedorHeader header .redes a:hover{
+.contenedorHeader header ul li a:hover{
     background-color: #1cb698;
 }
 .nav-Responsive{
