@@ -21,15 +21,19 @@
                 <a href="#">Agustin Menichelli</a>
             </div>
             <nav id="nav">
-                <ul>
-                    <li><a href="#inicio">INICIO</a></li>
-                    <li><a href="#sobremi">SOBRE MI</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#estudios">ESTUDIOS</a></li>
-                    <li><a href="#curriculum">CURRICULUM</a></li>
-                </ul>
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link" href="../index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#estudios">ESTUDIOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">CONTACTO</a>
+                    </li>
+                  </ul>
             </nav>
-            <div class="nav-Responsive" onclick="mostrarOcultarMenu()">
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </header>
@@ -44,60 +48,117 @@
             <h2>Analista de Datos - Futuro Desarrollador Backend</h2>
         </div>
     </section>
-     <!-- Seccion Curriculum -->
-     <section class="curriculum" id="curriculum">
-        <div class="contenidoCv">
-            <h2>Curriculum</h2>
-            <div class="fila">
-                <div class="lista izquierda">
-                    <h3>Educación</h3>
-                    <div class="item left">
-                        <h4>Análisis de Datos</h4>
-                        <span class="casa">CoderHouse</span>
-                        <span class="fecha">Enero '22 a Marzo '22</span>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item left">
-                        <h4>Data Studio</h4>
-                        <span class="casa">CoderHouse</span>
-                        <span class="fecha">Mayo '22 a Junio '22</span>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item left">
-                        <h4>Power Bi</h4>
-                        <span class="casa">CoderHouse</span>
-                        <span class="fecha">Enero '23 a Abril '23</span>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item left">
-                        <h4>My SQL</h4>
-                        <span class="casa">CoderHouse</span>
-                        <span class="fecha">Julio '22 a Agosto '22</span>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item left">
-                        <h4>Desarrollo WEB</h4>
-                        <span class="casa">CoderHouse</span>
-                        <span class="fecha">En Progreso</span>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
+     <!-- Seccion Estudios -->
+     <section class="estudios" id="estudios">
+        <div class="contenido-estudios">
+            <h2>Estudios</h2>
+            <div class="accordion" id="accordionEstudios">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOneEstudios" aria-expanded="true" aria-controls="collapseOneEstudios">
+                            Análisis de Datos - Coderhouse - Enero '22 - Marzo '22
+                        </button>
+                    </h2>
+                    <div id="collapseOneEstudios" class="accordion-collapse collapse show" data-bs-parent="#accordionEstudios">
+                        <div class="accordion-body">
+                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                            collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit overflow.
                         </div>
                     </div>
                 </div>
-                    <!-- Seccion Footer -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwoEstudios" aria-expanded="false" aria-controls="collapseTwoEstudios">
+                            Data Studio - CoderHouse - Mayo '22 a Junio '22
+                        </button>
+                    </h2>
+                    <div id="collapseTwoEstudios" class="accordion-collapse collapse" data-bs-parent="#accordionEstudios">
+                        <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until
+                            the collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThreeEstudios" aria-expanded="false" aria-controls="collapseThreeEstudios">
+                            Power BI - CoderHouse - Julio '22 a Agosto '22
+                        </button>
+                    </h2>
+                    <div id="collapseThreeEstudios" class="accordion-collapse collapse" data-bs-parent="#accordionEstudios">
+                        <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                            collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFourEstudios" aria-expanded="false" aria-controls="collapseFourEstudios">
+                            My SQL - CoderHouse - Enero '23 a Abril '23
+                        </button>
+                    </h2>
+                    <div id="collapseFourEstudios" class="accordion-collapse collapse" data-bs-parent="#accordionEstudios">
+                        <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                            collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFiveEstudios" aria-expanded="false" aria-controls="collapseFiveEstudios">
+                            Desarrollo WEB - CoderHouse - 'En Progreso'
+                        </button>
+                    </h2>
+                    <div id="collapseFiveEstudios" class="accordion-collapse collapse" data-bs-parent="#accordionEstudios">
+                        <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                            collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Seccion Contacto -->
+    <section id="contacto" class="contacto">
+         <div class="contenido-contacto">
+            <h2>Contacto</h2>
+            <h5>Podes comunicarte conmigo a traves de estos canales</h5>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-solid fa-at"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- Seccion Footer -->
     <footer>
         <a href="#inicio" class="arriba">
             <i class="fa-solid fa-angles-up"></i>
