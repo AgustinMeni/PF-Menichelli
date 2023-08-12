@@ -434,7 +434,7 @@ html{
 }
 /* Seccion Contacto */
 .contacto{
-    background-color: #1e2326;
+    background-color: #252a2e;
     color: #fff;
     padding: 50px 0;
 }
@@ -505,6 +505,13 @@ footer .arriba{
     border-radius: 50%;
     line-height: 50px;
     font-size: 18px;
+}
+.footer h6 {
+    background-color:#1e2326;
+    font-size: 20px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 10px 0;
 }
 /* Responsive */
 @media screen and (max-width: 980px){
