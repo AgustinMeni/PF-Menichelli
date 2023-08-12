@@ -507,7 +507,6 @@ footer .arriba{
     font-size: 18px;
 }
 /* Responsive */
-
 @media screen and (max-width: 980px){
     nav{
         display: none;

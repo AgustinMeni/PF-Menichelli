@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Portfolio AM</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Menu Encabezado-->
+    <div class="contenedorHeader">
+        <header>
+            <div class="logo">
+                <a href="#">Agustin Menichelli</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio">INICIO</a></li>
+                    <li><a href="#sobremi">SOBRE MI</a></li>
+                    <li><a href="#contacto">CONTACTO</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#curriculum">CURRICULUM</a></li>
+                </ul>
+            </nav>
+            <div class="nav-Responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <!--Seccion Inicio-->
+    <section id="inicio" class="inicio">
+        <div class="contenidoBanner">
+            <div class="contenedorImg">
+                <img src="./imagenes/fotoPerfil.jpg" alt="fotoPerfil">
+            </div>
+            <h1>Agustin Menichelli</h1>
+            <h2>Analista de Datos - Futuro Desarrollador Backend</h2>
+        </div>
+    </section>
+    <!--Seccion Sobre Mi-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-sobremi">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Agustin.</span> Soy un analista de datos con dos años de experiencia en diversos
+                sectores empresariales. He desempeñado distintos roles, desde analista hasta consultor de e-commerce. En
+                este punto de mi carrera profesional, mi objetivo es seguir fortaleciendo mis habilidades como analista
+                y avanzar hacia mi meta de convertirme en Desarrollador Backend.</p>
+            <p>Soy un apasionado de la tecnología y me considero un jugador de equipo. Mi enfoque es resolver problemas
+                de manera persistente y eficiente, superando obstáculos en el camino.</p>
+            <div class="fila">
+                <!-- Datos Personles -->
+                <div class="lista">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            19-09-1988
+                        </li>
+                        <li>
+                            <strong>¿Donde Vivo?</strong>
+                            Gral. San Martin, Prov. Bs As, Argentina.
+                        </li>
+                        <li>
+                            <strong>Trabajo Actual</strong>
+                            <span>CRO Data Analyst</span>
+                        </li>
+                        <li>
+                            <strong>Idioma</strong>
+                            <span>Español Nativo</span>
+                            <span>Ingles Intermedio</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Intereses -->
+                <div class="lista">
+                    <h3>Hobbies</h3>
+                    <div class="contenedorHobbies">
+                        <div class="Hobbie">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="Hobbie">
+                            <i class="fa-solid fa-music"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="Hobbie">
+                            <i class="fa-solid fa-futbol"></i>
+                            <span>FUTBOL</span>
+                        </div>
+                        <div class="Hobbie">
+                            <i class="fa-solid fa-person-biking"></i>
+                            <span>BIKE RIDE</span>
+                        </div>
+                        <div class="Hobbie">
+                            <i class="fa-brands fa-empire"></i>
+                            <span>STAR WARS</span>
+                        </div>
+                        <div class="Hobbie">
+                            <i class="fa-solid fa-dog"></i>
+                            <span>PERROS</span>
+                        </div>
+                        <div class="Hobbie">
+                            <i class="fa-solid fa-computer"></i>
+                            <span>TECHNO</span>
+                        </div>
+                        <div class="Hobbie">
+                            <i class="fa-solid fa-house"></i>
+                            <span>HOME</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- Seccion Contacto -->
+        <section id="contacto" class="contacto">
+            <div class="contenido-contacto">
+                <h2>Contacto</h2>
+                <h5>Podes comunicarte conmigo a traves de estos canales</h5>
+                    <div class="contacto-redes">
+                        <button type="button" class="WP" onclick="window.location.href= 'https://api.whatsapp.com/send?phone=TU_NUMERO_DE_TELEFONO'">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </button>
+                        <button type="button" class="LK" onclick="window.location.href='URL_DE_TU_PERFIL_LINKEDIN'">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </button>
+                        <button type="button" class="GM" onclick="window.location.href='mailto:DIRECCION_DE_CORREO'">
+                            <i class="fa-solid fa-at"></i>
+                        </button>
+                        </div>
+                    </div>
+        </section>
+            <!-- Seccion Footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
