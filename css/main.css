@@ -342,9 +342,6 @@ html{
     text-align: center;
     padding: 20px 0;
 }
-.accordionstyle{
-    background-color: #1e2326 !important;
-}
 /* Seccion Curriculum */
 .experiencia{
     background-color: #252a2e;
@@ -437,13 +434,12 @@ footer .arriba{
     line-height: 50px;
     font-size: 18px;
 }
-.footer h6 {
+.footer span {
     background-color:#1e2326;
     font-size: 20px;
     font-family: 'Righteous';
     text-align: center;
     padding: 10px 0;
-    margin-bottom: 0;
 }
 /* SECCION RESPONSIVE */
 @media screen and (max-width:980px){
