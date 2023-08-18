@@ -10,7 +10,7 @@ html{
     scroll-behavior: smooth;
 }
 /* Menu */
-.Header{
+.header{
     background: #1e2326;
     position: fixed;
     width: 100%;
@@ -18,7 +18,7 @@ html{
     left: 0;
     z-index: 80;
 }
-.Header{
+.header{
     max-width: 1500px;
     margin: auto;
     display: flex;
@@ -26,17 +26,17 @@ html{
     align-items: center;
     padding: 0px 10px;
 }
-.Header .logo a{
+.header .logo a{
     font-family: 'Righteous';
     font-size: 36px;
-    color: #1cb698;
+    color: #1cb698
     text-decoration: none;
 }
-.Header ul{
+.header ul{
     display: flex;
     list-style: none;
 }
-.Header ul li a{
+.header ul li a{
     font-family:'Righteous';
     text-align: none;
     color: #fff;
@@ -45,7 +45,7 @@ html{
     transition: .5s;
     text-decoration: none;
 }
-.Header ul li a:hover{
+.header ul li a:hover{
     background-color: #1cb698;
 }
 .nav-responsive{
