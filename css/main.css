@@ -9,9 +9,6 @@
 html{
     scroll-behavior: smooth;
 }
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
-    margin-bottom: 0;
-}
 /* Menu */
 .header{
     background: #1e2326;
@@ -32,7 +29,7 @@ html{
 .header .logo a{
     font-family: 'Righteous';
     font-size: 36px;
-    color: #1cb698
+    color: #1cb698;
     text-decoration: none;
 }
 .header ul{
@@ -50,14 +47,6 @@ html{
 }
 .header ul li a:hover{
     background-color: #1cb698;
-}
-.nav-responsive{
-    background-color: #1CB698;
-    color:#fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    display: none;
 }
 /* Seccion Inicio */
 .inicio{
@@ -353,6 +342,9 @@ html{
     text-align: center;
     padding: 20px 0;
 }
+.accordionstyle{
+    background-color: #1e2326 !important;
+}
 /* Seccion Curriculum */
 .experiencia{
     background-color: #252a2e;
@@ -368,6 +360,13 @@ html{
     font-family:'Righteous';
     text-align: center;
     padding: 20px 0;
+}
+.accordion-item,
+.accordion-button{
+    background-color: #1cb698;
+}
+.accordion-button:focus{
+    box-shadow: none;
 }
 /* Seccion Contacto */
 .contacto{
@@ -451,7 +450,7 @@ footer .arriba{
     nav{
         display: none;
     }
-    .nav-responsive{
+    .container-menu-responsive{
         display: block;
     }
     nav.responsive{
