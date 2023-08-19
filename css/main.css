@@ -23,7 +23,7 @@ html{
     font-family: 'Righteous';
     font-size: 36px;
     color: #1cb698;
-    text-decoration: none;
+    text-decoration: underline;
 }
 .offcanvas-body,
 .offcanvas-header{
@@ -32,6 +32,7 @@ html{
 .offcanvas-title{
     font-family:'Righteous';
     font-size: 25px;
+    text-decoration: underline;
 }
 .nav-link{
     font-family:'Righteous';
@@ -89,6 +90,7 @@ html{
     font-family:'Righteous';
     text-align: center;
     padding: 20px 0;
+    text-decoration: underline;
 }
 .sobremi .contenido-sobremi p{
     font: 18px;
@@ -170,6 +172,7 @@ html{
     font-family:'Righteous';
     text-align: center;
     padding: 20px 0;
+    text-decoration: underline;
 }
 .skills .fila{
     display: flex;
@@ -333,6 +336,7 @@ html{
     font-family:'Righteous';
     text-align: center;
     padding: 20px 0;
+    text-decoration: underline;
 }
 /* Seccion Curriculum */
 .experiencia{
@@ -349,6 +353,7 @@ html{
     font-family:'Righteous';
     text-align: center;
     padding: 20px 0;
+    text-decoration: underline;
 }
 .accordion-item,
 .accordion-button{
@@ -372,6 +377,7 @@ html{
     font-family: 'Righteous';
     text-align: center;
     padding: 15px 0;
+    text-decoration: underline;
 }
 .contacto h5{
     font-size: 30px;
@@ -428,7 +434,7 @@ footer .arriba{
 }
 .footer span {
     background-color:#1e2326;
-    font-size: 20px;
+    font-size: 10px;
     font-family: 'Righteous';
     text-align: center;
     padding: 10px 0;
