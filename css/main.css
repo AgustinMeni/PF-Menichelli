@@ -31,13 +31,14 @@ html{
 }
 .offcanvas-title{
     font-family:'Righteous';
-    font-size: 20px;
+    font-size: 25px;
+}
+.nav-link{
+    font-family:'Righteous';
+    text-decoration: underline;
 }
 .bg-body-tertiary{
     background-color: #1e2326 !important;
-}
-.header ul li a:hover{
-    background-color: #1cb698;
 }
 /* Seccion Inicio */
 .inicio{
