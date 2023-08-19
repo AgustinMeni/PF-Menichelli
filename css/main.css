@@ -10,40 +10,31 @@ html{
     scroll-behavior: smooth;
 }
 /* Menu */
-.header{
+.containerHeader{
+    background-color: #1e2326;
+}
+.container-fluid{
     background: #1e2326;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 80;
 }
-.header{
-    max-width: 1500px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 10px;
+ .navbar-toggler{
+    background-color: #fff;
 }
-.header .logo a{
+.navbar-brand{
     font-family: 'Righteous';
     font-size: 36px;
     color: #1cb698;
     text-decoration: none;
 }
-.header ul{
-    display: flex;
-    list-style: none;
+.offcanvas-body,
+.offcanvas-header{
+    background-color: #1cb698;
 }
-.header ul li a{
+.offcanvas-title{
     font-family:'Righteous';
-    text-align: none;
-    color: #fff;
-    margin: 0 15px;
-    padding: 10px;
-    transition: .5s;
-    text-decoration: none;
+    font-size: 20px;
+}
+.bg-body-tertiary{
+    background-color: #1e2326 !important;
 }
 .header ul li a:hover{
     background-color: #1cb698;
