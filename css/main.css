@@ -76,6 +76,14 @@ html{
     font-size: 15px;
     font-weight: normal;
 }
+.inicio span {
+    font-size: 20px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 10px 0;
+    color: #1cb698;
+    text-decoration: underline;
+}
 .sobremi{
     background-color: #1e2326;
     color: #fff;
