@@ -410,7 +410,7 @@ html{
     background-color: #1cb698;
 }
 /* Seccion Footer */
-.footer{
+footer{
     background-color: #252a2e;
     color: #fff;
     padding: 50px 30px 0;
@@ -418,7 +418,7 @@ html{
     position: relative;
     width: 100%;
 }
-.footer .arriba{
+footer .arriba{
     display: block;
     width: 50px;
     height: 50px;
