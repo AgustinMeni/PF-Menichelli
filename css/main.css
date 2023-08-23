@@ -121,8 +121,8 @@ html{
     text-decoration: underline;
 }
 .inicio span {
-	-webkit-animation: tracking-in-expand-fwd 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.5s infinite both;
-	        animation: tracking-in-expand-fwd 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.5s infinite both;
+	-webkit-animation: tracking-in-expand-fwd 5s cubic-bezier(0.550, 0.055, 0.675, 0.190) 4s infinite both;
+	        animation: tracking-in-expand-fwd 5s cubic-bezier(0.550, 0.055, 0.675, 0.190) 4s infinite both;
 }
  @-webkit-keyframes tracking-in-expand-fwd {
     0% {
