@@ -21,46 +21,10 @@ html{
 }
 .navbar-brand{
     font-family: 'Righteous';
-    font-size: 36px;
+    font-size: 40px;
     color: #1cb698;
     text-decoration: underline;
 }
-.navbar-brand {
-	-webkit-animation: tracking-in-expand-fwd 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.5s both;
-	        animation: tracking-in-expand-fwd 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.5s both;
-}
- @-webkit-keyframes tracking-in-expand-fwd {
-    0% {
-      letter-spacing: -0.5em;
-      -webkit-transform: translateZ(-700px);
-              transform: translateZ(-700px);
-      opacity: 0;
-    }
-    40% {
-      opacity: 0.6;
-    }
-    100% {
-      -webkit-transform: translateZ(0);
-              transform: translateZ(0);
-      opacity: 1;
-    }
-  }
-  @keyframes tracking-in-expand-fwd {
-    0% {
-      letter-spacing: -0.5em;
-      -webkit-transform: translateZ(-700px);
-              transform: translateZ(-700px);
-      opacity: 0;
-    }
-    40% {
-      opacity: 0.6;
-    }
-    100% {
-      -webkit-transform: translateZ(0);
-              transform: translateZ(0);
-      opacity: 1;
-    }
-  } 
 .offcanvas-body,
 .offcanvas-header{
     background-color: #1cb698;
@@ -120,43 +84,6 @@ html{
     color: #1cb698;
     text-decoration: underline;
 }
-.inicio span {
-	-webkit-animation: tracking-in-expand-fwd 5s cubic-bezier(0.550, 0.055, 0.675, 0.190) 4s infinite both;
-	        animation: tracking-in-expand-fwd 5s cubic-bezier(0.550, 0.055, 0.675, 0.190) 4s infinite both;
-}
- @-webkit-keyframes tracking-in-expand-fwd {
-    0% {
-      letter-spacing: -0.5em;
-      -webkit-transform: translateZ(-700px);
-              transform: translateZ(-700px);
-      opacity: 0;
-    }
-    40% {
-      opacity: 0.6;
-    }
-    100% {
-      -webkit-transform: translateZ(0);
-              transform: translateZ(0);
-      opacity: 1;
-    }
-  }
-  @keyframes tracking-in-expand-fwd {
-    0% {
-      letter-spacing: -0.5em;
-      -webkit-transform: translateZ(-700px);
-              transform: translateZ(-700px);
-      opacity: 0;
-    }
-    40% {
-      opacity: 0.6;
-    }
-    100% {
-      -webkit-transform: translateZ(0);
-              transform: translateZ(0);
-      opacity: 1;
-    }
-  }
-  
 /* Seccion Sobre Mi */
 .sobremi{
     background-color: #1e2326;
@@ -513,21 +440,6 @@ footer .arriba{
     border-radius: 50%;
     line-height: 50px;
     font-size: 18px;
-}
-.arriba {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    animation: arribayabajo 2s infinite alternate;
-}
-
-@keyframes arribayabajo {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(10px);
-    }
 }
 .footer span {
     background-color:#1e2326;
