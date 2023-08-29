@@ -46,7 +46,7 @@ html{
     background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
     url(../imagenes/fondo.jpg);
     background-size: cover;
-    height: 100vh;
+    height: 120vh;
     color: #fff;
     display: flex;
     align-items: center;
@@ -449,7 +449,10 @@ footer .arriba{
     padding: 10px 0;
 }
 /* SECCION RESPONSIVE */
-@media screen and (max-width:1024px) and (min-width: 768px){
+@media screen and (max-width:768px){
+    .inicio{
+        height: 120vh;
+    }
     .sobremi .fila{
         display: block;
     }
