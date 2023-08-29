@@ -91,7 +91,7 @@ html{
     padding: 50px 20px
 }
 .sobremi .contenido-sobremi{
-    max-width: 1300px;
+    max-width: 1200px;
     margin: auto;
 }
 .sobremi h2{
@@ -173,7 +173,7 @@ html{
     padding: 50px 20px;
 }
 .skills .contenido-skills{
-    max-width: 1300px;
+    max-width: 1200px;
     margin: auto;
 }
 .skills h2{
@@ -337,7 +337,7 @@ html{
     padding: 50px 20px;
 }
 .estudios .contenido-estudios{
-    max-width: 1300px;
+    max-width: 1200px;
     margin: auto;
 }
 .estudios h1{
@@ -354,7 +354,7 @@ html{
     padding: 50px 20px;
 }
 .experiencia .contenido-experiencia{
-    max-width: 1300px;
+    max-width: 1200px;
     margin: auto;
 }
 .experiencia h1{
@@ -378,7 +378,7 @@ html{
 }
 .contacto .contenido-contacto{
     background-color: #1e2326;
-    max-width: 1300px;
+    max-width: 1200px;
     margin: auto;
 }
 .contacto h2{
@@ -449,18 +449,23 @@ footer .arriba{
     padding: 10px 0;
 }
 /* SECCION RESPONSIVE */
-@media screen and (max-width:700px){
+@media screen and (max-width:1024px) and (min-width: 768px){
     .sobremi .fila{
         display: block;
     }
     .sobremi .fila .lista{
         width: fit-content;
     }
+    .skills .fila {
+        flex-direction: column;
+        align-items: center;
+    }
     .skills .lista{
         display: inline-block;
     }
     .skills .fila .lista{
         width: 100%;
+        margin-bottom: 20px;
     }
     .skills .fila .lista .barra-skill{
         width: 100%;
