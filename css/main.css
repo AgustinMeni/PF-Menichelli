@@ -340,7 +340,7 @@ html{
     max-width: 1300px;
     margin: auto;
 }
-.estudios h2{
+.estudios h1{
     font-size: 48px;
     font-family:'Righteous';
     text-align: center;
@@ -357,7 +357,7 @@ html{
     max-width: 1300px;
     margin: auto;
 }
-.experiencia h2{
+.experiencia h1{
     font-size: 48px;
     font-family:'Righteous';
     text-align: center;
