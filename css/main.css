@@ -457,7 +457,7 @@ footer .arriba{
         width: fit-content;
     }
     .skills .lista{
-        display: block;
+        display: inline-block;
     }
     .skills .fila .lista{
         width: 100%;
