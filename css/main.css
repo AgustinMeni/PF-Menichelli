@@ -145,14 +145,14 @@ html{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    gap: 15px;
 }
 .sobremi .fila .lista .contenedorHobbies .Hobbie{
-    width: 100px;
+    flex-basis: calc(25% - 15px);
     height: 100px;
     background-color: #252a2e;
     border-radius: 10px;
-    margin: 0 15px 15px 0;
+    margin-bottom: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
