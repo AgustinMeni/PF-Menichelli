@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+// Variables de colores
+$color-background: #1e2326;
+$color-text: #fff;
+$color-primary: #1cb698;
+$color-secondary: #252a2e;
+$color-accent: #131517;
+
+// Variables de fuentes
+$font-family-main: 'Work Sans';
+$font-family-heading: 'Righteous';
+
+* {
+  box-sizing: border-box;
+  font-family: $font-family-main;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* Menu */
+.containerHeader {
+    background-color: $color-background;
+  }
+  
+  .container-fluid {
+    background: $color-background;
+  }
+  
+  .navbar-toggler {
+    background-color: $color-text;
+  }
+  
+  .navbar-brand {
+    font-family: $font-family-heading;
+    font-size: 40px;
+    color: $color-primary;
+    text-decoration: underline;
+  }
+  
+  .offcanvas-body,
+  .offcanvas-header {
+    background-color: $color-primary;
+  }
+  
+  .offcanvas-title {
+    font-family: $font-family-heading;
+    font-size: 25px;
+    text-decoration: underline;
+  }
+  
+  .nav-link {
+    font-family: $font-family-heading;
+    text-decoration: underline;
+  }
+  
+  .bg-body-tertiary {
+    background-color: $color-background !important;
+  }
+  /* Seccion Inicio */
+.inicio {
+    background: linear-gradient(to top, rgba(30, 35, 38, 0.8), rgba(30, 35, 38, 1)),
+      url(../imagenes/fondo.jpg);
+    background-size: cover;
+    height: 120vh;
+    color: $color-text;
+    display: flex;
+    align-items: center;
+  }
+  
+  .inicio .contenidoBanner {
+    padding: 20px;
+    background-color: $color-background;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+  }
+  
+  .inicio .contenidoBanner img {
+    margin-top: 40px;
+    border: 10px solid $color-primary;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+  }
+  
+  .inicio .contenidoBanner h1 {
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: $font-family-heading;
+  }
+  
+  .inicio .contenidoBanner h2 {
+    font-size: 15px;
+    font-weight: normal;
+  }
+  
+  .inicio span {
+    font-size: 20px;
+    font-family: $font-family-heading;
+    text-align: center;
+    padding: 10px 0;
+    color: $color-primary;
+    text-decoration: underline;
+  }
+/* Seccion Sobre Mi */
+.sobremi {
+    background-color: $color-background;
+    color: $color-text;
+    padding: 50px 20px;
+  }
+  
+  .sobremi .contenido-sobremi {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .sobremi h2 {
+    font-size: 48px;
+    font-family: $font-family-heading;
+    text-align: center;
+    padding: 20px 0;
+    text-decoration: underline;
+  }
+  
+  .sobremi .contenido-sobremi p {
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+  
+  .sobremi .contenido-sobremi p span {
+    color: $color-primary;
+    font-weight: bold;
+  }
+  
+  .sobremi .fila {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sobremi .fila .lista {
+    width: 50%;
+  }
+  
+  .sobremi .fila .lista h3 {
+    font-size: 28px;
+    font-family: $font-family-heading;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  
+  .sobremi .fila .lista ul {
+    list-style: none;
+  }
+  
+  .sobremi .fila .lista ul li {
+    margin: 20px 0;
+  }
+  
+  .sobremi .fila .lista ul li strong {
+    display: inline-block;
+    color: $color-primary;
+    width: 130px;
+  }
+  
+  .sobremi .fila .lista ul li span {
+    background-color: $color-primary;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  .sobremi .fila .lista .contenedorHobbies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .sobremi .fila .lista .contenedorHobbies .Hobbie {
+    flex-basis: calc(25% - 15px);
+    height: 100px;
+    background-color: $color-secondary;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+  }
+  .sobremi .fila .lista .contenedorHobbies .Hobbie:hover {
+    background-color: $color-primary;
+  }
+  
+  .sobremi .fila .lista .contenedorHobbies .Hobbie i {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }  
+/* Seccion Skills */
+$skills: (
+    Microsoft: 100%,
+    Power: 50%,
+    Workspace: 100%,
+    Google: 65%,
+    Looker: 75%,
+    SQL: 50%,
+    htmlcss: 15%,
+    comunicacion: 75%,
+    equipo: 90%,
+    dedicacion: 95%,
+    analitica: 65%,
+    gestion: 55%,
+    proyect: 80%
+);
+.skills {
+    background-color: $color-secondary;
+    color: $color-text;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-decoration: underline;
+}
+
+.skills .fila {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.skills .lista {
+    width: 49%;
+    padding: 0 20px;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+
+    h3 {
+        font-size: 28px;
+        font-family: 'Righteous';
+        margin-bottom: 25px;
+        text-align: center;
+    }
+}
+.skills .skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    span {
+        font-weight: bold;
+        margin-right: 10px;
+        width: 80px;
+        text-align: right;
+    }
+    .barra-skill {
+        flex-grow: 1;
+        height: 8px;
+        background-color: $color-accent;
+        position: relative;
+        .progreso {
+            height: 100%;
+            background-color: $color-primary;
+        }
+    }
+}
+
+// Generar clases de habilidades y estilos inline para las animaciones
+@for $skill, $percentage in $skills {
+    .skills .skill.#{$skill} {
+        width: 0%;
+        animation: width-animation 2s forwards;
+        animation-delay: 0.5s;
+    }
+
+    @keyframes width-animation {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: #{$percentage};
+        }
+    }
+}
+/* Seccion Estudios */
+.estudios {
+    background-color: $color-background;
+    color: $color-text;
+    padding: 50px 20px;
+  }
+  
+  .estudios .contenido-estudios {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .estudios h1 {
+    font-size: 48px;
+    font-family: $font-family-heading;
+    text-align: center;
+    padding: 20px 0;
+    text-decoration: underline;
+  }
+  /* Seccion Curriculum */
+  .experiencia {
+    background-color: $color-secondary; /* Puedes ajustar el color según tus preferencias */
+    color: $color-text;
+    padding: 50px 20px;
+  }
+  
+  .experiencia .contenido-experiencia {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .experiencia h1 {
+    font-size: 48px;
+    font-family: $font-family-heading;
+    text-align: center;
+    padding: 20px 0;
+    text-decoration: underline;
+  }
+  
+  .accordion-item,
+  .accordion-button {
+    background-color: $color-primary; /* Puedes ajustar el color según tus preferencias */
+  }
+  
+  .accordion-button:focus {
+    box-shadow: none;
+  }
+ /* Seccion Contacto */
+.contacto {
+    background-color: $color-background; /* Puedes ajustar el color según tus preferencias */
+    color: $color-text;
+  }
+  
+  .contacto .contenido-contacto {
+    background-color: $color-background; /* Puedes ajustar el color según tus preferencias */
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .contacto h1 {
+    font-size: 48px;
+    font-family: $font-family-heading;
+    text-align: center;
+    padding: 15px 0;
+    text-decoration: underline;
+  }
+  
+  .contacto h5 {
+    font-size: 30px;
+    font-family: $font-family-heading;
+    text-align: center;
+    padding: 15px 0;
+  }
+  
+  .redes {
+    display: flex;
+    padding: 15px 0 20px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .redes a {
+    color: $color-text;
+    display: block;
+    text-decoration: none;
+    border: 1px solid $color-text;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    margin: 60px 20px;
+    font-size: 30px;
+    transition: .3s;
+  
+    &:hover {
+      background-color: $color-primary; /* Puedes ajustar el color según tus preferencias */
+    }
+  }
+  
+  /* Seccion Footer */
+  footer {
+    background-color: $color-secondary; /* Puedes ajustar el color según tus preferencias */
+    color: $color-text;
+    padding: 50px 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+  }
+  
+  footer .arriba {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: $color-primary; /* Puedes ajustar el color según tus preferencias */
+    color: $color-text;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+  }
+  
+  .footer span {
+    background-color: $color-background; /* Puedes ajustar el color según tus preferencias */
+    font-size: 10px;
+    font-family: $font-family-heading;
+    text-align: center;
+    padding: 10px 0;
+  }
+  /* SECCION RESPONSIVE */
+@media screen and (max-width:768px){
+    .inicio{
+        height: 120vh;
+    }
+    .sobremi .fila{
+        display: block;
+    }
+    .sobremi .fila .lista{
+        width: fit-content;
+    }
+    .skills .fila {
+        flex-direction: column;
+        align-items: center;
+    }
+    .skills .lista{
+        display: inline-block;
+    }
+    .skills .fila .lista{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .skills .fila .lista .barra-skill{
+        width: 100%;
+    }
+    .estudios .fila{
+        display: block;
+    }
+    .estudios .fila .accordion{
+        width: 90%;
+    }
+    .experiencia .fila{
+        display: block;
+    }
+    .experiencia .fila .accordion{
+        width: 90%;
+    }
+    .contacto .redes{
+        width: 100%;
+    }
+}
