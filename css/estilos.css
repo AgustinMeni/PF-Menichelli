@@ -204,58 +204,49 @@ html {
   color: #fff;
   padding: 50px 20px;
 }
-
 .skills .contenido-skills {
   max-width: 1200px;
   margin: auto;
 }
-
-.skills h2 {
+.skills .contenido-skills h2 {
   font-size: 48px;
   font-family: "Righteous";
   text-align: center;
   padding: 20px 0;
   text-decoration: underline;
 }
-
-.skills .fila {
+.skills .contenido-skills .fila {
   display: flex;
 }
-
-.skills .fila .lista {
+.skills .contenido-skills .fila .lista {
   width: 50%;
   padding: 0 20px;
 }
-
-.skills .fila .lista h3 {
+.skills .contenido-skills .fila .lista h3 {
   font-size: 28px;
   font-family: "Righteous";
   margin-bottom: 25px;
 }
-
-.skills .skill > span {
+.skills .contenido-skills .fila .lista .skill > span {
   font-weight: bold;
   display: block;
   margin-bottom: 10px;
 }
-
-.skills .skill .barra-skill {
+.skills .contenido-skills .fila .lista .barra-skill {
   height: 8px;
   width: 80%;
   background-color: #131517;
   position: relative;
   margin-bottom: 30px;
 }
-
-.skills .skill .progreso {
+.skills .contenido-skills .fila .lista .barra-skill .progreso {
   background-color: #1cb698;
   position: absolute;
   top: 0;
   left: 0;
   height: 8px;
 }
-
-.skills .skill .barra-skill span {
+.skills .contenido-skills .fila .lista .barra-skill span {
   position: absolute;
   height: 40px;
   width: 40px;
@@ -267,12 +258,10 @@ html {
   right: -15px;
   font-size: 14px;
 }
-
-.skills .skill.Microsoft {
+.skills .contenido-skills .fila .lista .Microsoft {
   width: 0%;
-  animation: Microsoft 2s forwards;
+  animation: 2s Microsoft forwards;
 }
-
 @keyframes Microsoft {
   0% {
     width: 0%;
@@ -281,11 +270,10 @@ html {
     width: 100%;
   }
 }
-.skills .skill.Power {
+.skills .contenido-skills .fila .lista .Power {
   width: 0%;
-  animation: Power 2s forwards;
+  animation: 2s Power forwards;
 }
-
 @keyframes Power {
   0% {
     width: 0%;
@@ -294,11 +282,10 @@ html {
     width: 50%;
   }
 }
-.skills .skill.Workspace {
+.skills .contenido-skills .fila .lista .Workspace {
   width: 0%;
-  animation: Workspace 2s forwards;
+  animation: 2s Workspace forwards;
 }
-
 @keyframes Workspace {
   0% {
     width: 0%;
@@ -307,11 +294,10 @@ html {
     width: 100%;
   }
 }
-.skills .skill.Google {
+.skills .contenido-skills .fila .lista .Google {
   width: 0%;
-  animation: Google 2s forwards;
+  animation: 2s Google forwards;
 }
-
 @keyframes Google {
   0% {
     width: 0%;
@@ -320,11 +306,10 @@ html {
     width: 65%;
   }
 }
-.skills .skill.Looker {
+.skills .contenido-skills .fila .lista .Looker {
   width: 0%;
-  animation: Looker 2s forwards;
+  animation: 2s Looker forwards;
 }
-
 @keyframes Looker {
   0% {
     width: 0%;
@@ -333,11 +318,10 @@ html {
     width: 75%;
   }
 }
-.skills .skill.SQL {
+.skills .contenido-skills .fila .lista .SQL {
   width: 0%;
-  animation: SQL 2s forwards;
+  animation: 2s SQL forwards;
 }
-
 @keyframes SQL {
   0% {
     width: 0%;
@@ -346,11 +330,10 @@ html {
     width: 50%;
   }
 }
-.skills .skill.htmlcss {
+.skills .contenido-skills .fila .lista .htmlcss {
   width: 0%;
-  animation: htmlcss 2s forwards;
+  animation: 2s htmlcss forwards;
 }
-
 @keyframes htmlcss {
   0% {
     width: 0%;
@@ -359,11 +342,10 @@ html {
     width: 15%;
   }
 }
-.skills .skill.comunicacion {
+.skills .contenido-skills .fila .lista .comunicacion {
   width: 0%;
-  animation: comunicacion 2s forwards;
+  animation: 2s comunicacion forwards;
 }
-
 @keyframes comunicacion {
   0% {
     width: 0%;
@@ -372,11 +354,10 @@ html {
     width: 75%;
   }
 }
-.skills .skill.equipo {
+.skills .contenido-skills .fila .lista .equipo {
   width: 0%;
-  animation: equipo 2s forwards;
+  animation: 2s equipo forwards;
 }
-
 @keyframes equipo {
   0% {
     width: 0%;
@@ -385,11 +366,10 @@ html {
     width: 90%;
   }
 }
-.skills .skill.dedicacion {
+.skills .contenido-skills .fila .lista .dedicacion {
   width: 0%;
-  animation: dedicacion 2s forwards;
+  animation: 2s dedicacion forwards;
 }
-
 @keyframes dedicacion {
   0% {
     width: 0%;
@@ -398,11 +378,10 @@ html {
     width: 95%;
   }
 }
-.skills .skill.analitica {
+.skills .contenido-skills .fila .lista .analitica {
   width: 0%;
-  animation: analitica 2s forwards;
+  animation: 2s analitica forwards;
 }
-
 @keyframes analitica {
   0% {
     width: 0%;
@@ -411,11 +390,10 @@ html {
     width: 65%;
   }
 }
-.skills .skill.gestion {
+.skills .contenido-skills .fila .lista .gestion {
   width: 0%;
-  animation: gestion 2s forwards;
+  animation: 2s gestion forwards;
 }
-
 @keyframes gestion {
   0% {
     width: 0%;
@@ -424,11 +402,10 @@ html {
     width: 55%;
   }
 }
-.skills .skill.proyect {
+.skills .contenido-skills .fila .lista .proyect {
   width: 0%;
-  animation: proyect 2s forwards;
+  animation: 2s proyect forwards;
 }
-
 @keyframes proyect {
   0% {
     width: 0%;
@@ -437,6 +414,7 @@ html {
     width: 80%;
   }
 }
+
 /* Seccion Estudios */
 .estudios {
   background-color: #1e2326;

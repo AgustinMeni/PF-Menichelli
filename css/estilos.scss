@@ -206,93 +206,93 @@ html {
     margin-bottom: 10px;
   }  
 /* Seccion Skills */
-$skills: (
-    Microsoft: 100%,
-    Power: 50%,
-    Workspace: 100%,
-    Google: 65%,
-    Looker: 75%,
-    SQL: 50%,
-    htmlcss: 15%,
-    comunicacion: 75%,
-    equipo: 90%,
-    dedicacion: 95%,
-    analitica: 65%,
-    gestion: 55%,
-    proyect: 80%
+// Define un mapa con las habilidades y porcentajes
+$skillsMap: (
+  Microsoft: 100%,
+  Power: 50%,
+  Workspace: 100%,
+  Google: 65%,
+  Looker: 75%,
+  SQL: 50%,
+  htmlcss: 15%,
+  comunicacion: 75%,
+  equipo: 90%,
+  dedicacion: 95%,
+  analitica: 65%,
+  gestion: 55%,
+  proyect: 80%
 );
+
 .skills {
-    background-color: $color-secondary;
-    color: $color-text;
+    background-color: #252a2e;
+    color: #fff;
     padding: 50px 20px;
-    max-width: 1200px;
-    margin: auto;
-    text-align: center;
-}
-
-.skills h2 {
-    font-size: 48px;
-    font-family: 'Righteous';
-    text-decoration: underline;
-}
-
-.skills .fila {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.skills .lista {
-    width: 49%;
-    padding: 0 20px;
-    margin-bottom: 40px;
-    box-sizing: border-box;
-
-    h3 {
-        font-size: 28px;
-        font-family: 'Righteous';
-        margin-bottom: 25px;
-        text-align: center;
-    }
-}
-.skills .skill {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    span {
-        font-weight: bold;
-        margin-right: 10px;
-        width: 80px;
-        text-align: right;
-    }
-    .barra-skill {
-        flex-grow: 1;
-        height: 8px;
-        background-color: $color-accent;
-        position: relative;
-        .progreso {
-            height: 100%;
-            background-color: $color-primary;
+    .contenido-skills {
+        max-width: 1200px;
+        margin: auto;
+        h2 {
+            font-size: 48px;
+            font-family: 'Righteous';
+            text-align: center;
+            padding: 20px 0;
+            text-decoration: underline;
+        }
+        .fila {
+            display: flex;
+            .lista {
+                width: 50%;
+                padding: 0 20px;
+                h3 {
+                    font-size: 28px;
+                    font-family: 'Righteous';
+                    margin-bottom: 25px;
+                }
+                .skill > span {
+                    font-weight: bold;
+                    display: block;
+                    margin-bottom: 10px;
+                }
+                .barra-skill {
+                    height: 8px;
+                    width: 80%;
+                    background-color: #131517;
+                    position: relative;
+                    margin-bottom: 30px;
+                    .progreso {
+                        background-color: #1cb698;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 8px;
+                    }
+                    span {
+                        position: absolute;
+                        height: 40px;
+                        width: 40px;
+                        background-color: #1cb698;
+                        border-radius: 50px;
+                        line-height: 40px;
+                        text-align: center;
+                        top: -17px;
+                        right: -15px;
+                        font-size: 14px;
+                    }
+                }
+                @each $skill, $percentage in $skillsMap {
+                    .#{$skill} {
+                        width: 0%;
+                        animation: 2s #{$skill} forwards;
+                        @keyframes #{$skill} {
+                            0% { width: 0%; }
+                            100% { width: #{$percentage}; }
+                        }
+                    }
+                }
+            }
         }
     }
 }
 
-// Generar clases de habilidades y estilos inline para las animaciones
-@for $skill, $percentage in $skills {
-    .skills .skill.#{$skill} {
-        width: 0%;
-        animation: width-animation 2s forwards;
-        animation-delay: 0.5s;
-    }
-
-    @keyframes width-animation {
-        0% {
-            width: 0%;
-        }
-        100% {
-            width: #{$percentage};
-        }
-    }
-}
 /* Seccion Estudios */
 .estudios {
     background-color: $color-background;
