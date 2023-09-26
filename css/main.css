@@ -41,6 +41,24 @@ html{
 .bg-body-tertiary{
     background-color: #1e2326 !important;
 }
+/* Botón de Descargar CV */
+.btn-descargar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1cb698;
+    color: #131517;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Righteous';
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-descargar:hover {
+    background-color: #169481;
+}
 /* Seccion Inicio */
 .inicio{
     background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
