@@ -72,7 +72,7 @@ html{
 .inicio .contenidoBanner{
     padding: 20px;
     background-color: #1e2326;
-    max-width: 350px;
+    max-width: 500px;
     margin: auto;
     text-align: center;
     border-radius: 40px;
@@ -91,7 +91,7 @@ html{
     font-family: 'Righteous';
 }
 .inicio .contenidoBanner h2{
-    font-size: 15px;
+    font-size: 20px;
     font-weight: normal;
 }
 .inicio span {
@@ -120,68 +120,14 @@ html{
     text-decoration: underline;
 }
 .sobremi .contenido-sobremi p{
-    font: 18px;
+    font-size: 23px;
+    font: 30px;
     line-height: 22px;
     margin-bottom: 20px;
 }
 .sobremi .contenido-sobremi p span{
     color: #1cb698;
     font-weight: bold;
-}
-.sobremi .fila{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.sobremi .fila .lista{
-    width: 50%;
-}
-.sobremi .fila .lista h3{
-    font-size: 28px;
-    font-family: 'Righteous';
-    margin-bottom: 25px;
-    text-align: center;
-}
-.sobremi .fila .lista ul{
-    list-style: none;
-}
-.sobremi .fila .lista ul li{
-    margin: 20px 0;
-}
-.sobremi .fila .lista ul li strong{
-    display: inline-block;
-    color: #1cb698;
-    width: 130px;
-}
-.sobremi .fila .lista ul li span{
-    background-color: #1cb698;
-    padding: 3px;
-    font-weight: bold;
-    border-radius: 5px;
-}
-.sobremi .fila .lista .contenedorHobbies{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-}
-.sobremi .fila .lista .contenedorHobbies .Hobbie{
-    height: 100px;
-    background-color: #252a2e;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: .3s;
-}
-.sobremi .fila .lista .contenedorHobbies .Hobbie:hover{
-    background-color: #1cb698;
-}
-.sobremi .fila .lista .contenedorHobbies .Hobbie i{
-    font-size: 30px;
-    margin-bottom: 10px;
 }
 /* Seccion Skills */
 .skills{
@@ -297,7 +243,15 @@ html{
 }
 @keyframes htmlcss {
     0%{width: 0%;}
-    100%{width: 15%;}
+    100%{width: 20%;}
+}
+.skills .skill .QA{
+    width: 0%;
+    animation: 2s QA forwards;
+}
+@keyframes QA {
+    0%{width: 0%;}
+    100%{width: 60%;}
 }
 .skills .skill .comunicacion{
     width: 0%;
@@ -305,7 +259,7 @@ html{
 }
 @keyframes comunicacion {
     0%{width: 0%;}
-    100%{width: 75%;}
+    100%{width: 90%;}
 }
 .skills .skill .equipo{
     width: 0%;
@@ -329,7 +283,7 @@ html{
 }
 @keyframes analitica {
     0%{width: 0%;}
-    100%{width: 65%;}
+    100%{width: 90%;}
 }
 .skills .skill .gestion{
     width: 0%;
@@ -337,7 +291,7 @@ html{
 }
 @keyframes gestion {
     0%{width: 0%;}
-    100%{width: 55%;}
+    100%{width: 90%;}
 }
 .skills .skill .proyect{
     width: 0%;
